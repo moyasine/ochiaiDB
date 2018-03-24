@@ -1,0 +1,12 @@
+<h1><%= Date.today %> の 質問一覧 </h1>
+
+  <% @presentation.each do |presentation| %>
+      <div style="text-align: center;">
+        <h3><%= presentation.id %></h3>
+        <h2><%= presentation.name %></h2>
+        <h1><%= presentation.body %></h1>
+      </div>
+  <% end %>
+
+
+
