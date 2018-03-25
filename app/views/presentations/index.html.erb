@@ -2,11 +2,16 @@
 
   <% @presentation.each do |presentation| %>
       <div style="text-align: center;">
-        <h3><%= presentation.id %></h3>
-        <h2><%= presentation.name %></h2>
-        <h1><%= presentation.body %></h1>
+        <p><%= presentation.id %></p>
+        <p><%= presentation.name %></p>
+        <p style="font-size: 36px; padding: 20px 20px; margin: 20px 20px;"><%= presentation.body %></p>
       </div>
   <% end %>
+<style>
+  body {
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
+</style>
 
 
 
